@@ -1,0 +1,40 @@
+[project]
+name = "xlance-msr"
+version = "0.1.0"
+description = "Professional AI Audio Separation GUI"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.1.0",
+    "torchaudio>=2.1.0",
+    "gradio>=4.0.0",
+    "gradio-client",
+    "librosa==0.9.2",
+    "numpy",
+    "soundfile",
+    "huggingface_hub",
+    "pyyaml",
+    "tqdm",
+    "transformers",
+    "pytorch-lightning",
+    "rotary-embedding-torch",
+    "encodec",
+    "audiobox-aesthetics",
+    "beartype",
+    "pyroomacoustics",
+]
+
+[tool.uv]
+managed = true
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+torchaudio = { index = "pytorch-cu128" }
+
+[dependency-groups]
+dev = []
