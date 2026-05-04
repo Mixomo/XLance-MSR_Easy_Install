@@ -48,8 +48,8 @@ Setting up XLance-MSR Pro is easier than ever thanks to the automated `uv` envir
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-repo/xlance-msr.git
-cd xlance-msr
+git clone https://github.com/Mixomo/XLance-MSR_Easy_Install.git
+cd XLance-MSR_Easy_Install
 ```
 
 ### 2. Install Dependencies
